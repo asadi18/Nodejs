@@ -1,0 +1,23 @@
+{
+  "name": "initial-npm",
+  "version": "1.0.0",
+  "description": "this is the first npm running ",
+  "main": "index.js",
+  "scripts": {
+    "test": "none",
+    "start": "nodemon index.js",
+    "prod": "node index.js"
+  },
+  "keywords": [
+    "test",
+    "npm"
+  ],
+  "author": "Asad Ishteaque",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
