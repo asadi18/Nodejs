@@ -1,0 +1,75 @@
+<%- include('../partials/header.ejs') %>
+<%- include('../partials/nav.ejs') %>
+
+<body>
+  <h1><%= title %></h1>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde velit saepe ad
+    impedit! Ducimus corrupti voluptas sapiente dolor porro quos repudiandae,
+    aspernatur at adipisci necessitatibus enim atque quis eos a voluptate ad
+    corporis velit nostrum vel accusantium, iste magni earum. Doloremque id
+    magni adipisci odit sunt quibusdam, optio beatae. At iure non earum,
+    perferendis accusamus sequi eligendi. Officiis sunt perspiciatis deleniti
+    enim blanditiis sed laborum id aperiam vitae odit corrupti perferendis
+    beatae suscipit quam in repudiandae exercitationem et quis, consectetur
+    iusto, voluptatem consequuntur, eaque reprehenderit cupiditate. Debitis
+    tenetur in laboriosam officiis dignissimos facere corporis pariatur
+    reprehenderit voluptates. Voluptatibus sint blanditiis mollitia perferendis,
+    nesciunt pariatur tenetur sit obcaecati fugit maiores dolor debitis fuga
+    commodi nemo odit corrupti at doloribus voluptate? Unde quia natus
+    architecto dignissimos ipsum laborum atque omnis ducimus a labore debitis
+    tempora sunt fugiat reprehenderit amet, quo pariatur ipsa similique
+    blanditiis nostrum id obcaecati quae? Voluptate quaerat dignissimos hic
+    tempora, corporis obcaecati facere minus, at iure quas fugit placeat error.
+    Vel quam dolore animi deserunt, recusandae earum vero modi fuga architecto
+    corporis fugit porro sapiente consectetur ex dolorum excepturi explicabo
+    aut. Quidem maxime placeat officiis nesciunt veritatis aliquam sint sed
+    dolores dolore asperiores! Esse, id! Accusantium vitae quae neque
+    consectetur temporibus. Veniam consequatur, sint voluptatibus exercitationem
+    recusandae, sapiente nostrum voluptatum aperiam eius laudantium voluptatem
+    tenetur unde cum numquam perferendis adipisci vitae dignissimos a explicabo
+    odio esse minima reiciendis tempore modi! Nobis similique molestias neque,
+    velit earum dolores quia tempora reiciendis autem delectus eius voluptatum
+    vitae nisi esse! Eaque atque quo minima veniam quos rerum officia pariatur
+    velit enim, iusto facere voluptatibus doloremque ea vero eos est. Magni id
+    fugiat vero officiis beatae quam enim voluptate inventore totam ipsum
+    provident eum reiciendis nulla nam illum officia quas qui, repellendus
+    laudantium dignissimos non sapiente saepe amet optio? Nam laudantium tempora
+    quae eligendi magnam quibusdam. Et quae quo repellat, quos, dolor neque
+    aliquam, nobis illo ullam eaque totam reiciendis deleniti. Corporis sed
+    cupiditate provident obcaecati nisi dolores architecto, deleniti tempora
+    unde repellat neque optio officia ratione voluptatem voluptates iusto
+    aperiam quasi quas dicta odit explicabo nobis voluptate! Nulla architecto
+    optio dignissimos aliquam corrupti ut obcaecati quo officia eius molestias
+    rem voluptatem possimus dolorum, quis nobis cum molestiae, magnam at maiores
+    consequatur, neque dolor ea. Reiciendis doloribus aperiam tenetur iusto
+    magnam qui sed architecto illo quod, nisi natus laboriosam! Dicta
+    repellendus aliquid reprehenderit ipsa porro veniam debitis qui possimus
+    maiores, fugit perferendis nostrum beatae laboriosam vitae quam, vel
+    sapiente amet doloribus ipsum sint? Quae atque illum reprehenderit earum
+    nemo possimus quasi beatae ipsa unde molestiae, distinctio id ad officia
+    explicabo, eos, hic architecto dolorum pariatur. Dolor, omnis eum amet alias
+    quae illum architecto ullam in repellat iste voluptatum tempora deleniti,
+    itaque maiores eius ducimus cum provident vel vero? Quam, quae natus, soluta
+    cupiditate laborum magni velit maiores eum modi ex asperiores dolorum ullam
+    sunt tempora maxime iure, dolore necessitatibus! Nemo dolores nobis odio
+    accusantium, dicta labore ab deleniti iure qui! Tempora, consectetur ducimus
+    impedit voluptate numquam veritatis, voluptatem optio recusandae nulla
+    quaerat tenetur!
+  </p>
+  <h2>Current Time is:</h2>
+  <%= new Date().toString() %> <% if (post.published){ %>
+  <h4><%= post.title %></h4>
+  <p><%= post.body %></p>
+  <% } else {%>
+  <h4>NOT AVAILABLE</h4>
+  <% } %>
+
+  <ul>
+    <% for(let p of posts) { %>
+    <li><%= p.title %> and author is <%= p.author %></li>
+    <% } %>
+  </ul>
+</body>
+
+<%- include('../partials/footer.ejs') %>
